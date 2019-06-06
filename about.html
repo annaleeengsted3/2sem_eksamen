@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Lisbet Friis Design is located in Raadvad where she designs and handprints quality textiles at her workshop. Her focus is materials, patterns and colors">
+    <meta name="keywords" content="design, textile, fabric, hand printed, linen, weave, hand made, material, pattern, color, colour, graphical, stripes, lines, checkers, Raadvad, Denmark, Copenhagen, Northern Denmark, Fabula Living Denmark, Stelton, Kvadrat, Fritz Hansen, Christiana Bikes, Epice Paris, Copenhagen Fur, In Wear, Kenzo Paris, Koo Concept, rug, carpet, runner, pillow, cushion, wallet, make-up bag, coin purse, New York, postcard, print, printing, scarf, wrap, shawl, aesthetics, quality, simplicity, interio, interior design, fashion, architecture, furniture">
+    <title>Lisbet Friis: About the Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700|Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+
+        #top_wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 2vw;
+            grid-gap: 5vw;
+            justify-items: center;
+        }
+
+        .left {
+            position: relative;
+            width: 50vw;
+            height: 54vw;
+
+        }
+
+        .left img {
+            width: 50vw;
+        }
+
+        .img2 {
+            position: absolute;
+            width: 90%;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        .img1 {
+            position: absolute;
+            width: 90%;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        #bottom_wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 2vw;
+            grid-gap: 5vw;
+        }
+
+        .bot_left {
+            align-content: space-around;
+        }
+
+
+        #img_wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 20vh;
+
+        }
+
+
+        .press,
+        .resume {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            position: relative;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+
+        }
+
+        .press img,
+        .resume img {
+            width: 100%;
+        }
+
+
+
+        .button {
+            position: absolute;
+            background-color: white;
+            width: 160px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            letter-spacing: 10px;
+            font-size: 2rem;
+            font-size: 1rem;
+            box-shadow: 14px 15px 16px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p img {
+            width: 15px;
+        }
+
+                    video {
+
+    position: static;
+    background-size: cover;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+
+
+
+        @media screen and (min-width: 520px) {
+            #top_wrapper {
+                grid-template-columns: repeat(2, 1fr);
+                margin: 10vw;
+            }
+
+            #bottom_wrapper {
+                grid-template-columns: 1fr 2fr;
+                grid-auto-flow: dense;
+                margin: 10vw;
+            }
+
+            .left {
+                position: relative;
+                width: 30vw;
+                height: 34vw;
+            }
+
+            .left img {
+                width: 30vw;
+            }
+
+            #img_wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0 10vw 10vw 10vw;
+            }
+
+            .resume,
+            .press {
+                margin-top: 5vh;
+            }
+
+
+            .opacity {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #cecece;
+            }
+
+            .press:hover .opacity,
+            .resume:hover .opacity {
+                opacity: .5;
+            }
+
+        }
+
+
+        @media screen and (min-width: 825px) {
+            .desk_nav a:nth-child(3):after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 1px;
+                bottom: 1.5vw;
+                left: 1.5vw;
+                background-color: #000;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mobile">
+        <div class="logo_con">
+            <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div id="myNav" class="overlay mobile_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="work_index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a href="shop_index.html">shop</a>
+                    <div id="some"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+                </div>
+            </div>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+
+        </nav>
+    </header>
+    <header>
+        <nav class="desk">
+            <div class="logo_con">
+                <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+            </div>
+            <div class="desk_nav">
+                <a href="index.html">home</a>
+                <a href="work_index.html">work</a>
+                <a href="about.html">about</a>
+                <a href="shop_index.html">shop</a>
+            </div>
+            <div id="some_desk"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+        </nav>
+    </header>
+
+
+    <main id="about">
+
+
+        <section id="top_wrapper">
+            <div class="left">
+                <div class="pictures">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                </div>
+            </div>
+            <div class="right">
+                <h1>About Lisbet Friis</h1>
+                <div class="txt1"></div>
+            </div>
+        </section>
+
+
+
+
+        <section id="bottom_wrapper">
+            <div class="bot_left">
+                <h2>Contact</h2>
+
+                <div class="txt2"></div>
+
+
+                <p class="txt3"><img src="img/phone.svg" alt="phone"></p>
+                <p class="txt4"><img src="img/mail.svg" alt="phone"></p>
+            </div>
+            <div class="bot_right">
+                <video autoplay muted loop>
+                    <source src="video/raadvadvideo.ogv" type="video/ogv" />
+                    <source src="video/raadvadvideo.webm" type="video/webm" />
+                    <source src="video/raadvadvideo.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="img_wrapper">
+            <div class="press">
+                <div class="img3"><img src="img/press2.jpg" alt="press photo"></div>
+                <div class="img4"><img src="img/press.jpg" alt="press photo"></div>
+                <div class="opacity"></div>
+                <a href="document/press.pdf" target="_blank" class="button">PRESS</a>
+
+            </div>
+            <div class="resume">
+                <div class="img5"><img src="img/resume2.jpg" alt="resume photo"></div>
+                <div class="img6"><img src="img/resume.jpg" alt="resume photo"></div>
+                <div class="opacity"></div>
+                <a href="work_index.html" class="button">RESUMÉ</a>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="bg">
+
+            <div id="footer_con">
+
+                <div class="footer_left">
+                    <p> <b>Lisbet Friis Design</b>
+                        <br>
+                        <br>
+                        CVR 18354993</p>
+                </div>
+                <div class="footer_right">
+                    <div class="mail">
+                        <img src="img/lokation.svg" alt="mail icon" class="pm_icon">
+                        <span class="number">Raadvad 40, 2800 Kgs. Lyngby, Denmark</span>
+                    </div>
+
+                    <div class="phone">
+                        <img src="img/phone.svg" alt="phone icon" class="pm_icon">
+                        <span class="number">+45 30 26 09 47</span>
+                    </div>
+
+                    <div class="mail">
+                        <img src="img/mail.svg" alt="mail icon" class="pm_icon">
+                        <span class="number"><a href="mailto:info@lisbetfriis.dk" target="_blank">info@lisbetfriis.dk</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="header.js"></script>
+    <script>
+        let info;
+
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+
+        async function hentJson() {
+
+            let url = "http://ohnonotanotherwebsite.com/kea/lisbetfriis/wordpress/wp-json/wp/v2/about/241";
+            let jsonData = await fetch(url);
+
+            info = await jsonData.json();
+
+            visData();
+            scrollLoop();
+
+            console.log("getjson");
+
+        }
+
+        function scrollLoop(e) {
+            var para = document.querySelector(".left");
+
+
+
+            var yScrollPosition;
+
+
+
+            yScrollPosition = window.scrollY;
+
+            setTranslate(0, yScrollPosition * +0.25, para);
+
+
+            requestAnimationFrame(scrollLoop);
+        }
+
+        function setTranslate(xPos, yPos, el) {
+
+
+            el.style.transform = `translate3d(0, ${yPos}px, 0)`;
+
+        }
+
+
+        function visData() {
+
+            //            her indsættes titel, billeder, tekst og video:
+
+
+
+            document.querySelector(".txt1").innerHTML = info.about_lisbet;
+            document.querySelector(".txt2").innerHTML = `${info.address}`;
+            document.querySelector(".txt3").innerHTML += ` ${info.phone}`;
+            document.querySelector(".txt4").innerHTML += ` ${info.mail}`;
+
+            document.querySelector(".img1").innerHTML = `<img src="${info.billede_1.guid}" alt="${info.billede_1.post_title}">`;
+            document.querySelector(".img2").innerHTML = `<img src="${info.billede_2.guid}" alt="${info.billede_2.post_title}">`;
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

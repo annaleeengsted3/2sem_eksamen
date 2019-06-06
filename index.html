@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Lisbet Friis Design is located in Raadvad where she designs and handprints quality textiles at her workshop. Her focus is materials, patterns and colors">
+    <meta name="keywords" content="design, textile, fabric, hand printed, linen, weave, hand made, material, pattern, color, colour, graphical, stripes, lines, checkers, Raadvad, Denmark, Copenhagen, Northern Denmark, Fabula Living Denmark, Stelton, Kvadrat, Fritz Hansen, Christiana Bikes, Epice Paris, Copenhagen Fur, In Wear, Kenzo Paris, Koo Concept, rug, carpet, runner, pillow, cushion, wallet, make-up bag, coin purse, New York, postcard, print, printing, scarf, wrap, shawl, aesthetics, quality, simplicity, interio, interior design, fashion, architecture, furniture">
+    <title>Lisbet Friis: Color, Pattern, Material</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700|Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        :root {
+            --color-darkblue: #303348;
+            --color-offwhite: #FBF7F5;
+            --color-red: #EA5045;
+            --color-turquoise: #6bafa5;
+
+
+        }
+
+
+
+        img,
+        video {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .txt1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            text-align: justify;
+
+            padding: 0 5vw;
+            margin-left: 5vw;
+        }
+
+        .img1 {
+            width: 80%;
+            box-shadow: 14px 15px 16px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .img2 {
+            position: absolute;
+            right: 0;
+            margin-top: 70vw;
+            width: 50%;
+            box-shadow: 14px 15px 16px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #img_wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 20vh;
+
+        }
+
+        #img_wrapper img {}
+
+        .work,
+        .shop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            position: relative;
+            margin-top: 10vw;
+
+        }
+
+        .work,
+        .shop {
+            margin-bottom: 10vh;
+        }
+
+        .button {
+            position: absolute;
+            background-color: white;
+            width: 120px;
+            height: 40px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 14px 15px 16px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .para_container {
+
+            margin: 0 auto;
+            background: #fff;
+            padding-top: 25px;
+        }
+
+        .parallax {
+            max-width: 90vw;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 55vw;
+        }
+
+
+
+
+        /************  PARRALAAAAAX ***********************/
+
+
+
+
+
+        #content_wrapper {
+            background-color: white;
+            padding-top: 10vw;
+        }
+
+
+
+        /************  MEDIA QUERIES***********************/
+
+
+        @media screen and (min-width: 520px) {
+
+            p {
+                text-align: right;
+            }
+
+            footer p {
+                text-align: left;
+            }
+
+            h1 {}
+
+
+            #deskcon {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #img_wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 0 10vw 5vw 10vw;
+            }
+
+
+
+
+            #content_wrapper {
+                margin-bottom: 10vh;
+            }
+
+            #content_wrapper img {
+                max-width: 60%;
+            }
+
+            .img2 {
+                margin-top: 20vw;
+                max-width: 30%;
+            }
+
+            .img1,
+            .img2 {
+                box-shadow: none;
+            }
+
+            .parallax {
+                height: 35vw;
+            }
+
+
+            .opacity {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #e8e8e8;
+            }
+
+            .shop:hover .opacity,
+            .work:hover .opacity {
+                opacity: .5;
+            }
+
+
+        }
+
+        @media screen and (min-width: 825px) {
+            .desk_nav a:nth-child(1):after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 1px;
+                bottom: 1.5vw;
+                left: 1.5vw;
+                background-color: #000;
+            }
+
+            .img1 {
+                max-width: 80%;
+            }
+
+            .img2 {
+                max-width: 35%;
+            }
+
+        }
+
+
+
+        @media screen and (min-width: 1280px) {
+            /*////////////////////////////////////////////////////////////////////////////////////scroll_indikator///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+            .scroll-down {
+                position: absolute;
+                left: 50%;
+                bottom: 40px;
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                z-index: 100;
+                text-decoration: none;
+                text-shadow: none;
+                width: 20px;
+                height: 20px;
+                border-bottom: 2px solid #000;
+                border-right: 2px solid #000;
+                z-index: 9;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0%) rotate(45deg);
+                -moz-transform: translate(-50%, 0%) rotate(45deg);
+                transform: translate(-50%, 0%) rotate(45deg);
+                -webkit-animation: fade_move_down 3s ease-in-out infinite;
+                -moz-animation: fade_move_down 3s ease-in-out infinite;
+                animation: fade_move_down 3s ease-in-out infinite;
+            }
+
+
+            /*animated scroll arrow animation*/
+            @-webkit-keyframes fade_move_down {
+                0% {
+                    -webkit-transform: translate(0, -10px) rotate(45deg);
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    -webkit-transform: translate(0, 10px) rotate(45deg);
+                    opacity: 0;
+                }
+            }
+
+            @-moz-keyframes fade_move_down {
+                0% {
+                    -moz-transform: translate(0, -10px) rotate(45deg);
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    -moz-transform: translate(0, 10px) rotate(45deg);
+                    opacity: 0;
+                }
+            }
+
+            @keyframes fade_move_down {
+                0% {
+                    transform: translate(0, -10px) rotate(45deg);
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translate(0, 10px) rotate(45deg);
+                    opacity: 0;
+                }
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="mobile">
+        <div class="logo_con">
+            <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div id="myNav" class="overlay mobile_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="work_index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a href="shop_index.html">shop</a>
+                    <div id="some"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+                </div>
+            </div>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+
+        </nav>
+    </header>
+    <header>
+        <nav class="desk">
+            <div class="logo_con">
+                <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+            </div>
+            <div class="desk_nav">
+                <a href="index.html">home</a>
+                <a href="work_index.html">work</a>
+                <a href="about.html">about</a>
+                <a href="shop_index.html">shop</a>
+            </div>
+            <div id="some_desk"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+        </nav>
+        <a href="#content_wrapper">
+            <div class="scroll-down"></div>
+        </a>
+
+    </header>
+
+
+
+    <main id="index">
+        <div class="para_container">
+            <div class="parallax"></div>
+            <section id="content_wrapper">
+                <h1>Lisbet Friis</h1>
+                <div id="deskcon">
+                    <div class="txt1"></div>
+                    <div class="imgcon">
+                        <div class="img2"></div>
+                        <div class="img1"></div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <section id="img_wrapper">
+            <div class="work">
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <div class="opacity"></div>
+                <a href="work_index.html" class="button">WORK</a>
+            </div>
+            <div class="shop">
+                <div class="img5"></div>
+                <div class="img6"></div>
+                <div class="opacity"></div>
+                <a href="shop_index.html" class="button">SHOP</a>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="bg">
+
+            <div id="footer_con">
+
+                <div class="footer_left">
+                    <p> <b>Lisbet Friis Design</b>
+                        <br>
+                        <br>
+                        CVR 18354993</p>
+                </div>
+                <div class="footer_right">
+                    <div class="mail">
+                        <img src="img/lokation.svg" alt="mail icon" class="pm_icon">
+                        <span class="number">Raadvad 40, 2800 Kgs. Lyngby, Denmark</span>
+                    </div>
+
+                    <div class="phone">
+                        <img src="img/phone.svg" alt="phone icon" class="pm_icon">
+                        <span class="number">+45 30 26 09 47</span>
+                    </div>
+
+                    <div class="mail">
+                        <img src="img/mail.svg" alt="mail icon" class="pm_icon">
+                        <span class="number"><a href="mailto:info@lisbetfriis.dk" target="_blank">info@lisbetfriis.dk</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="header.js"></script>
+
+    <script>
+        let info;
+
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+        async function hentJson() {
+
+            let url = "http://ohnonotanotherwebsite.com/kea/lisbetfriis/wordpress/wp-json/wp/v2/home/237";
+            let jsonData = await fetch(url);
+
+            info = await jsonData.json();
+
+            visData();
+
+            console.log("getjson");
+
+        }
+
+
+        function visData() {
+
+            //            her indsættes titel, billeder, tekst og video:
+
+
+            document.querySelector(".parallax").style.backgroundImage = "url(" + info.splash_video.guid + ")";
+
+
+
+
+            document.querySelector(".txt1").innerHTML = info.textbox;
+
+            document.querySelector(".img1").innerHTML = `<img src="${info.billede_1.guid}" alt="${info.billede_1.post_title}">`;
+            document.querySelector(".img2").innerHTML = `<img src="${info.swatch_billede.guid}" alt="${info.swatch_billede.post_title}">`;
+
+
+            document.querySelector(".img3").innerHTML = `<a href="work_index.html"><img src="${info.work_billede_1.guid}" alt="${info.work_billede_1.post_title}"></a>`;
+            document.querySelector(".img4").innerHTML = `<a href="work_index.html"><img src="${info.work_billede_2.guid}" alt="${info.work_billede_2.post_title}"></a>`;
+
+            document.querySelector(".img5").innerHTML = `<a href="shop_index.html"><img src="${info.shop_billede_1.guid}" alt="${info.shop_billede_1.post_title}"></a>`;
+            document.querySelector(".img6").innerHTML = `<a href="shop_index.html"><img src="${info.shop_billede_2.guid}" alt="${info.shop_billede_2.post_title}"></a>`;
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

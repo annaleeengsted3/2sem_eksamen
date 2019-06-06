@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Lisbet Friis Design is located in Raadvad where she designs and handprints quality textiles at her workshop. Her focus is materials, patterns and colors">
+    <meta name="keywords" content="design, textile, fabric, hand printed, linen, weave, hand made, material, pattern, color, colour, graphical, stripes, lines, checkers, Raadvad, Denmark, Copenhagen, Northern Denmark, Fabula Living Denmark, Stelton, Kvadrat, Fritz Hansen, Christiana Bikes, Epice Paris, Copenhagen Fur, In Wear, Kenzo Paris, Koo Concept, rug, carpet, runner, pillow, cushion, wallet, make-up bag, coin purse, New York, postcard, print, printing, scarf, wrap, shawl, aesthetics, quality, simplicity, interio, interior design, fashion, architecture, furniture">
+    <title>Unique Furniture Design by Lisbet Friis &amp; Black</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700|Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        main {
+            margin: 2vw;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            margin: 10vw;
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+
+        #work img {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .button_container {
+            margin-bottom: 10vw;
+        }
+
+        .button {
+            color: black;
+            letter-spacing: 1px;
+            text-align: center;
+            border: 1px solid #bebebe;
+            text-decoration: none;
+            padding: .6vw;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .button a {
+
+            color: black;
+            font-size: .8rem;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .button a:hover {
+            color: #909090;
+            font-weight: 700;
+        }
+
+
+
+        /*******************************************************************************************************KONTEKST NAV******************************/
+
+        #contextnav {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 40px 0;
+            margin: 20px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #contextnav nav a {
+            padding: 0 10px;
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: black;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        #contextnav nav a:hover {
+            font-weight: 700;
+        }
+
+        #active {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+
+        @media screen and (min-width: 520px) {
+
+            .button_container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                margin-bottom: 0;
+            }
+
+            .button {
+                color: black;
+                letter-spacing: 1px;
+                text-align: center;
+                border: 1px solid #bebebe;
+                text-decoration: none;
+                padding: .7vw;
+                font-family: 'Lato', sans-serif;
+
+            }
+
+            .button a {
+                font-size: 1rem;
+            }
+
+            aside {
+
+                position: fixed;
+
+
+            }
+
+            #contextnav nav {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 240px;
+                text-align: left;
+            }
+
+            #contextnav {
+                border-right: 1px solid black;
+                border-bottom: 0;
+                border-top: 0;
+            }
+
+            main {
+                margin-left: 333.3px;
+
+                margin-right: 5vw;
+
+                padding: 0px 10px;
+            }
+
+
+
+
+
+
+            h1 {
+                font-size: 2rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+
+
+
+        }
+
+
+        @media screen and (min-width: 900px) {
+
+
+
+            .desk_nav a:nth-child(2):after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 1px;
+                bottom: 1.5vw;
+                left: 1.5vw;
+                background-color: #000;
+            }
+
+
+            #work {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2vw;
+
+            }
+
+            .imgcla,
+            .pcla {
+                align-content: start;
+            }
+
+            article:nth-child(2n+1) {
+                grid-row-end: span 4;
+            }
+        }
+
+        @media screen and (min-width: 1112px) {
+            main {
+                margin-left: 25vw;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mobile">
+        <div class="logo_con">
+            <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div id="myNav" class="overlay mobile_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="work_index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a href="shop_index.html">shop</a>
+                    <div id="some"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+                </div>
+            </div>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+
+        </nav>
+    </header>
+    <header>
+        <nav class="desk">
+            <div class="logo_con">
+                <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+            </div>
+            <div class="desk_nav">
+                <a href="index.html">home</a>
+                <a href="work_index.html">work</a>
+                <a href="about.html">about</a>
+                <a href="shop_index.html">shop</a>
+            </div>
+            <div id="some_desk"><a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+        </nav>
+    </header>
+    <div class="workcontent">
+
+        <aside id="contextnav">
+            <nav>
+                <a href="work_index.html">Technique</a>
+                <a href="ny_stripes.html">New York Stripes</a>
+                <a href="friis_wood.html">Friis Wood</a>
+                <a href="hand_printed_textiles.html">Hand Printed Textiles</a>
+                <a href="printing.html">Printing</a>
+                <a href="commission_work.html">Commission Work</a>
+                <a href="friis_black.html"><b>Friis &amp; Black - Unique Furniture Design</b></a>
+
+            </nav>
+        </aside>
+
+        <main>
+            <div class="button_container">
+                <h1>Friis &amp; Black - Unique Furniture Design</h1>
+                <div class="button"><a href="about.html#bottom_wrapper">Interested in custom work by Lisbet Friis? Get in touch here!</a></div>
+            </div>
+
+            <section id="work">
+
+                <article class="imgcla">
+                </article>
+                <article class="pcla">
+                </article>
+
+
+
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+
+        <div class="bg">
+
+            <div id="footer_con">
+
+                <div class="footer_left">
+                    <p> <b>Lisbet Friis Design</b>
+                        <br>
+                        <br>
+                        CVR 18354993</p>
+                </div>
+                <div class="footer_right">
+                    <div class="mail">
+                        <img src="img/lokation.svg" alt="mail icon" class="pm_icon">
+                        <span class="number">Raadvad 40, 2800 Kgs. Lyngby, Denmark</span>
+                    </div>
+
+                    <div class="phone">
+                        <img src="img/phone.svg" alt="phone icon" class="pm_icon">
+                        <span class="number">+45 30 26 09 47</span>
+                    </div>
+
+                    <div class="mail">
+                        <img src="img/mail.svg" alt="mail icon" class="pm_icon">
+                        <span class="number"><a href="mailto:info@lisbetfriis.dk" target="_blank">info@lisbetfriis.dk</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="header.js"></script>
+
+    <script>
+        let info = [];
+
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+
+        async function hentJson() {
+
+            let url = "http://ohnonotanotherwebsite.com/kea/lisbetfriis/wordpress/wp-json/wp/v2/friisblack?per_page=50";
+            let jsonData = await fetch(url);
+
+            info = await jsonData.json();
+
+            visData();
+
+            console.log("getjson");
+
+        }
+
+        function visData() {
+            console.log("visdata");
+            let dest = document.querySelector("#work");
+
+
+
+            dest.innerHTML = "";
+
+
+
+
+            info.forEach(item => {
+
+                let template = `
+    <article>
+<img src = "${item.billede.guid}" alt="${item.title.rendered}">
+    </article>
+    <article>
+<p>${item.text}</p>
+    </article>
+`;
+                dest.insertAdjacentHTML("beforeend", template);
+
+
+
+
+
+            });
+        }
+    </script>
+</body>
+
+</html>

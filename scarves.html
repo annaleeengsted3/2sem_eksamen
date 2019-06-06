@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Shop handmade quality products by Lisbet Friis. Her workshop is located in Raadvad where she designs textiles focused on materials, patterns and colors">
+    <meta name="keywords" content="design, textile, fabric, hand printed, linen, weave, hand made, material, pattern, color, colour, graphical, stripes, lines, checkers, Raadvad, Denmark, Copenhagen, Northern Denmark, Fabula Living Denmark, Stelton, Kvadrat, Fritz Hansen, Christiana Bikes, Epice Paris, Copenhagen Fur, In Wear, Kenzo Paris, Koo Concept, rug, carpet, runner, pillow, cushion, wallet, make-up bag, coin purse, New York, postcard, print, printing, scarf, wrap, shawl, aesthetics, quality, simplicity, interio, interior design, fashion, architecture, furniture">
+    <title>Hand Printed Scarves by Lisbet Friis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,700|Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+            margin: 0;
+
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-family: "Raleway", sans-serif;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+        }
+
+
+
+        h1 {
+            font-size: 2rem;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            margin: 10vw 5vw 0 5vw;
+        }
+
+
+
+        article {
+            display: grid;
+            grid-template-columns: 1fr;
+
+        }
+
+
+        .category {
+            font-size: 1rem;
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            margin: 0 5vw 10vw 5vw;
+            text-align: justify;
+        }
+
+
+        .produkt_pris {
+            display: flex;
+            justify-content: space-between;
+            width: 70vw;
+        }
+
+        .product_pic {
+            position: relative;
+            width: 70vw;
+            height: 70vw;
+        }
+
+
+
+        .bottom {
+            position: absolute;
+            width: 90%;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+        }
+
+        .top {
+
+            position: absolute;
+            z-index: 2;
+            width: 90%;
+            top: 0;
+            left: 0;
+            border: 1px solid rgba(75, 75, 75, 0.6);
+
+        }
+
+
+
+
+        #container {
+            display: grid;
+            justify-items: center;
+        }
+
+
+        #stripes {
+            width: 100%;
+
+        }
+
+
+
+
+
+
+        @media screen and (min-width: 520px) {
+
+            #container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-row-gap: 8vw;
+                grid-column-gap: 3vw;
+            }
+
+
+            .product_pic {
+                position: relative;
+                width: 22vw;
+                height: 22vw;
+            }
+
+
+            .bottom {
+                opacity: 0.6;
+            }
+
+
+            .bottom,
+            .top {
+                transition: 0.5s ease-in-out;
+            }
+
+            .product_pic:hover .bottom {
+                z-index: 5;
+                opacity: 1;
+            }
+
+            .product_pic:hover .top {
+                opacity: .5;
+            }
+
+            .produkt_pris {
+                display: flex;
+                justify-content: space-between;
+                width: 22vw;
+            }
+
+
+
+
+
+            h1 {
+                font-size: 2rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 5vw;
+                margin-bottom: 1vw;
+            }
+
+        }
+
+        @media screen and (min-width: 825px) {
+
+            .desk_nav a:nth-child(4):after {
+                content: "";
+                position: absolute;
+                width: 55%;
+                height: 1px;
+                bottom: 1.5vw;
+                left: 1.5vw;
+                background-color: #000;
+            }
+
+            .category {
+                margin: 0 25vw 10vw 5vw;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="shop">
+    <header class="mobile">
+        <div class="logo_con">
+            <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <div id="myNav" class="overlay mobile_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="work_index.html">work</a>
+                    <a href="about.html">about</a>
+                    <a href="shop_index.html">shop</a>
+                    <div id="some">
+                        <a href=""> <img src="img/shop.svg" alt="shopping bag"></a>
+                        <a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+                </div>
+            </div>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+
+        </nav>
+    </header>
+    <header>
+        <nav class="desk">
+            <div class="logo_con">
+                <a href="index.html"><img src="img/LisbetFriis-logo.svg" alt="logo"></a>
+            </div>
+            <div class="desk_nav">
+                <a href="index.html">home</a>
+                <a href="work_index.html">work</a>
+                <a href="about.html">about</a>
+                <a href="shop_index.html">shop</a>
+            </div>
+            <div id="some_desk">
+                <a href=""> <img src="img/shop.svg" alt="shopping bag"></a>
+                <a href="https://www.facebook.com/LisbetFriisDesign/" target="_blank"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/lisbetfriis/" target="_blank"><img src="img/instagram.svg" alt="facebook"></a></div>
+        </nav>
+    </header>
+
+
+
+
+
+    <div class="content">
+
+        <aside id="contextnav">
+            <nav>
+                <a href="rugs.html">Rugs</a>
+                <a href="scarves.html"><b>Scarves</b></a>
+                <a href="pillows.html">Pillows</a>
+                <a href="wallets.html">Wallets</a>
+                <a href="postcards_prints.html">Prints &amp; postcards</a>
+
+            </nav>
+        </aside>
+
+
+
+
+        <main id="scarves">
+
+
+            <h1>Scarves</h1>
+            <p class="category"></p>
+            <section id="container"></section>
+
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="bg">
+
+            <div id="footer_con">
+
+                <div class="footer_left">
+                    <p> <b>Lisbet Friis Design</b>
+                        <br>
+                        <br>
+                        CVR 18354993</p>
+                </div>
+                <div class="footer_right">
+                    <div class="mail">
+                        <img src="img/lokation.svg" alt="mail icon" class="pm_icon">
+                        <span class="number">Raadvad 40, 2800 Kgs. Lyngby, Denmark</span>
+                    </div>
+
+                    <div class="phone">
+                        <img src="img/phone.svg" alt="phone icon" class="pm_icon">
+                        <span class="number">+45 30 26 09 47</span>
+                    </div>
+
+                    <div class="mail">
+                        <img src="img/mail.svg" alt="mail icon" class="pm_icon">
+                        <span class="number"><a href="mailto:info@lisbetfriis.dk" target="_blank">info@lisbetfriis.dk</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="header.js"></script>
+
+    <script>
+        let info = [];
+        let filter = "scarf";
+
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+
+        async function hentJson() {
+
+            let url = "http://ohnonotanotherwebsite.com/kea/lisbetfriis/wordpress/wp-json/wp/v2/shop?per_page=50";
+            let jsonData = await fetch(url);
+
+            info = await jsonData.json();
+
+            visData();
+
+            console.log("getjson");
+
+        }
+
+
+
+
+
+
+
+
+
+        function visData() {
+            console.log("visdata");
+            let dest = document.querySelector("#container");
+            let kat = info.find(kat => kat.id == 210);
+
+
+            document.querySelector(".category").innerHTML = kat.kategoribeskrivelse;
+
+
+            dest.innerHTML = "";
+
+
+            // her laves et loop, hvor man gennemgår alle posts i shop pod'en og tjekker, hvilke der har filter-kategorien, i det her tilfælde scarf. Så for alle tørklæder indsættes den samme template
+
+            info.forEach(item => {
+                if (filter == item.category) {
+                    let template = `
+                        <article class = "product">
+<div class="product_pic">
+        <img src = "${item.produkt_pattern.guid}" alt="${item.title.rendered}" class="bottom">
+
+<img src = "${item.produktbillede.guid}" alt="${item.title.rendered}" class="top"></div>
+<br>
+<div class="produkt_pris"><h3>${item.title.rendered}</h3>
+<h4>${item.produktpris}</h4></div>
+                        </article>
+`;
+                    dest.insertAdjacentHTML("beforeend", template);
+
+
+
+                    dest.lastElementChild.addEventListener("click", () => {
+                        location.href = "product.html?id=" + item.id;
+                        //her vil browseren hente siden product.html, og den vil desuden give siden en variabel,x, som er lig med item.id.
+                    });
+                }
+            });
+
+
+
+        }
+    </script>
+</body>
+
+</html>
